@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body, input, textarea, button {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: large;
+}
+header {
+    padding: 5px;
+    background-color: black;
+}
+header .container,
+footer .container {
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container {
+    display: flex;
+    max-width: 1366;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    height: 40px;
+    margin-top: 4px;
+}
+header nav a {
+    text-decoration: none;
+    color: #0666aa;
+}
+header nav li {
+    display: inline;
+    padding-left: 30px;
+}
+
+section .space_blank {
+    display: flex;
+    padding: 182.5px;
+    background-color: black;
+}
+
+#searchbox {
+    background-color: black;
+}
+#searchbox img {
+    margin-bottom: 4px;
+}
+#searchbox a {
+    display: flex;
+    justify-content: center;
+}
+#searchbox .container textarea {
+    resize: none;
+    height: 40px;
+    width: 400px;
+}
+#searchbox .container textarea:focus {
+    color: white;
+    background-color: black;
+}
+#searchbox .container {
+    display: flex;
+    justify-content: center;
+}
+#searchbox .container form {
+    display: block;
+}
+
+#sbutton {
+    display: flex;
+    justify-content: initial;
+}
+#sbutton button {
+    background-color: #02050800;
+    color: #0666aa;
+    border: none;
+    margin-right: 20px;
+}
+#sbutton button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: #0666aa;
+    padding: 20px;
+}
+footer .container li {
+    display: inline;
+}
+footer .container a {
+    text-decoration: none;
+    color: #0666aa;
+}
+footer .container li a {
+    padding-left: 30px
+}
+
+footer .container {
+    position: sticky;
+    bottom: 0;
+}
