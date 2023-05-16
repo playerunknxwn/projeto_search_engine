@@ -27,6 +27,7 @@ footer .container {
 header .container h1 {
     height: 40px;
     margin-top: 4px;
+    font-weight: 500;
 }
 header .container a {
     text-decoration: none;
