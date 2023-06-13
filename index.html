@@ -2,58 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searching4</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+    <title>Searching4</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href="https://github.com/playerunknxwn/S4_search_engine.git" title="Go to the Searching4 project web page">
-                <h1>Searching4</h1>
+        <div class="header">
+            <a href="https://github.com/playerunknxwn/S4_search_engine.git" title="Go to the Searching4 Github repo" target="_blank">
+                <h1 id="title">Searching4</h1>
             </a>
-            <nav>
-                <ul class="search-filter">
+            <nav class="navbar">
+                <ul>
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">News</a></li>
+                    <li><a href="#">Shopping</a></li>
                     <li><a href="#">Tools</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
-        <div class="space_blank"></div>
-    </section>
-    <section id="searchbox">
-        <div class="mainlogo"><img src="./imgs/5336a3cde9137a28d35323f1a0573d41.png" alt="Homepage"></div>
-        <div class="container">
-            <form action="search">
-                <textarea name="search" id="search" cols="1" rows="1" ></textarea>
-                <div id="sbutton">
-                    <button type="submit" title="click here to search">search</button>
-                    <button type="submit" title="search for images">images</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <section>
-        <div class="space_blank"></div>
-    </section>
+    <main>
+        <section class="bodycenter">
+            <div class="searchbox">
+                <img src="/imgs/5336a3cde9137a28d35323f1a0573d41.png" alt="Searching4 logo">
+                <form action="search">
+                    <textarea placeholder="  ...what are you searching4?" name="searchbox" id="searchbox" cols="43" rows="1"></textarea>
+                    <div class="sbutton">
+                        <button>search</button>
+                        <button title="search for images">images</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
-        <div class="container">
-            <a href="#">About us</a>
-            <ul>
-                <li><a href="https://duckduckgo.com/" title="Try DuckDuckGo">DuckDuckGo</a></li>
-                <li><a href="https://www.google.com" title="The almighty (full of ads) Google">Google</a></li>
-                <li><a href="https://search.brave.com/" title="Try Brave Search">Brave Search</a></li>
+        <div class="footer">
+            <ul class="footerLinks">
+                <li><a id="ddg" href="https://duckduckgo.com/" title="Try DuckDuckGo">DuckDuckGo</a></li>
+                <li><a id="google" href="https://google.com" title="The almighty (full of ads) Google">Google</a></li>
+                <li><a id="brave" href="https://search.brave.com/" title="Try Brave Search">Brave Search</a></li>
             </ul>
-            <p>
-                <a href="https://github.com/playerunknxwn" title="My Github">&copy; playerunknxwn - 2023</a>
-            </p>
+            <div class="author">
+                <ul class="authorlinks">
+                    <li>
+                        <a id="about" href="/about_us.html">About us</a>
+                    </li>
+                    <li>
+                        <a id="playerunknxwn" href="https://github.com/playerunknxwn" target="_blank" title="My Github">&copy; playerunknxwn - 2023</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

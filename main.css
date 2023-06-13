@@ -1,112 +1,220 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background-color: rgb(25, 25, 25);
+    color: #0666aa;
+}
+
+body a {
+    text-decoration: none;
+    color: #0666aa;
+}
+
 body, input, textarea, button {
     font-family: 'Instrument Sans', sans-serif;
     font-size: large;
 }
-header {
-    padding: 5px;
-    background-color: black;
-}
-header .container,
-footer .container {
-    align-items: center;
-    justify-content: space-evenly;
-}
-.container {
+
+.header {
     display: flex;
-    max-width: 1366;
-    width: 100%;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    border-bottom: 1px solid #0666aa;
 }
 
-header .container h1 {
-    height: 40px;
-    margin-top: 4px;
+.header h1 {
+    margin-bottom: 5px;
     font-weight: 500;
 }
-header .container a {
-    text-decoration: none;
-    color: #0666aa;
-}
-header nav a {
-    text-decoration: none;
-    color: #0666aa;
-}
-header nav li {
+
+.navbar li {
     display: inline;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
-section .space_blank {
+.bodycenter{
     display: flex;
-    padding: 182.5px;
-    background-color: black;
-}
-
-#searchbox {
-    background-color: black;
-}
-#searchbox img {
-    margin-bottom: 4px;
-}
-#searchbox .mainlogo {
-    display: flex;
+    align-content: center;
     justify-content: center;
+    padding: 300px;
 }
-#searchbox .container textarea {
-    resize: none;
-    height: 40px;
-    width: 400px;
+section .searchbox img {
+    padding-bottom: 10px;
 }
-#searchbox .container textarea:focus {
+section #searchbox form{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form textarea {
+    border-radius: 10px;
+    padding: 5px 2px 5px 2px;
+    background-color: rgb(25, 25, 25);
+    color: #0666aa;
+}
+
+form textarea:focus, .contactus form textarea:focus {
+    background-color: black;
     color: white;
-    background-color: black;
+    outline-color: #0666aa;
 }
-#searchbox .container {
-    display: flex;
-    justify-content: center;
-}
-#searchbox .container form {
-    display: block;
+#searchbox, #textbox {
+    resize: none;
 }
 
-#sbutton {
-    display: flex;
-    justify-content: initial;
+.sbutton button {
+    flex-flow: row;
+    margin-right: 25px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #0666aa;
 }
-#sbutton button {
-    background-color: #02050800;
+#selectfilter option {
+    background-color: black;
     color: #0666aa;
     border: none;
-    margin-right: 20px;
 }
-#sbutton button:hover {
-    text-decoration: underline;
+
+.sbutton button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    border-bottom: 1px solid #0666aa;
+}
+
+.footerLinks a {
+    margin: 0 25px 0 25px;
+}
+
+.authorlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-inline: 50px;
+    margin-bottom: 5px;
+}
+
+#about:hover, #home:hover {
+    color: white;
+}
+#playerunknxwn:hover {
+    color: purple;
+}
+#ddg:hover {
+    color: rgb(255, 123, 0);
+}
+#google:hover {
+    color: rgb(34, 139, 243);
+}
+#brave:hover {
+    color: orangered;
+}
+
+/*about page*/
+
+.aboutsection {
+    display: flex;
+    justify-content: center;
+}
+.aboutsection article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.about_us {
+    width: 100%;
+    cursor: default;
+}
+.about_us h2 {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.about_us p {
+    margin-bottom: 3px;
+}
+.about_us p a {
+    margin-top: 5px;
+    font-weight: 100;
+    text-decoration: underline
+}
+.about_us p a:hover {
+    color: #ccc;
     cursor: pointer;
 }
 
-footer {
-    background-color: black;
-    color: #0666aa;
-    padding: 20px;
+.contactus {
+    width: 100%;
 }
-footer .container li {
-    display: inline;
+.contactus form input, #textbox, .contactus button {
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+    margin-bottom: 8px;
+    padding: 2px;
+    background-color: rgb(25, 25, 25);
+    color: white;
 }
-footer .container a {
-    text-decoration: none;
-    color: #0666aa;
+.contactus form input:focus {
+    outline-color: #0666aa;
 }
-footer .container li a {
-    padding-left: 30px
+.contactus select {
+    width: 30%;
+    margin-bottom: 8px;
 }
 
-footer .container {
-    position: sticky;
-    bottom: 0;
+.contactus button {
+    background-color: rgb(25, 25, 25);
+    color: #0666aa;
+    border: none;
+    text-decoration: underline;
+}
+.contactus button:hover {
+    border-bottom: solid;
+    cursor: pointer;
+    text-decoration: none;
+}
+.socialsdiv {
+    display: inline-block;
+    margin-left: 13%;
+    margin-top: 100px;
+}
+.socials li {
+    list-style: none;
+}
+.socials a {
+    color: #ccc;
+}
+.socials li a:hover {
+    color: #0666aa;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 100;
 }
